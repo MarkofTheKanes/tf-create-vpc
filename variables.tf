@@ -177,3 +177,15 @@ variable "cidr_blockval" {
   }
 
 }
+
+#----------------
+# S3 VARIABLES
+variable "bucket_name" {
+  description = "S3 Bucket Name"
+  type        = string
+  default     = "demoS3_bucket"
+  validation {
+    condition     = length(var.bucket_name) >= 4
+    error_message = "The S3 Bucket Name must be 4 characters or more in length."
+  }
+}
