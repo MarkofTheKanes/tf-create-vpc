@@ -29,5 +29,9 @@ eg_description = "Allow all egress traffic"
 # VPC VARIABLES
 cidr_blockval = "10.0.0.0/16"
 
+#----------------
+# S3 VARIABLES
+bucket_name = "s3_demo"
+
 
 
